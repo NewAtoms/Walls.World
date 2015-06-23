@@ -2,14 +2,14 @@ _prefs:
   disabled: []
   inspector: false
   mapid: bvhme.6341c6fc
-  rev: s-13ebfcf1
+  rev: s-28241900
   saveCenter: true
 attribution: New Atoms
 center: 
-  - 43.5938
-  - 0.7031
-  - 1
-description: ''
+  - -107.2488
+  - 29.2864
+  - 3
+description: With US Border fence
 Layer: 
   - id: Walls_with_one_line
     Datasource: 
@@ -35,18 +35,45 @@ Layer:
     properties: 
       "buffer-size": 8
     srs: "+init=epsg:4326"
-  - id: United_States_Mexico_Barrier
+  - id: US_Border_fence
     Datasource: 
-      file: /Users/bvhme/walls-of-the-world/map/Walls of the world.kml
-      layer: United States Mexico Barrier
+      file: /Users/bvhme/walls-of-the-world/map/US Border fence.geojson
+      layer: OGRGeoJSON
       type: ogr
-    description: ''
+    description: US Border Fence
     fields: 
-      Description: String
-      Name: String
+      id: String
+      access: String
+      "addr:city": String
+      "addr:country": String
+      "addr:housenumber": String
+      "addr:postcode": String
+      "addr:street": String
+      barrier: String
+      border_fence: String
+      border_fence_owner: String
+      border_fence_type: String
+      border_fence_type_detailed: String
+      changeset: String
+      emergency: String
+      foot: String
+      "is_in:city": String
+      "is_in:country": String
+      "is_in:country_code": String
+      "is_in:state": String
+      "is_in:state_code": String
+      loc_name: String
+      "loc_name:de": String
+      source: String
+      supervised: String
+      timestamp: String
+      two_sided: String
+      uid: String
+      user: String
+      version: String
     properties: 
       "buffer-size": 8
-    srs: "+init=epsg:4326"
-maxzoom: 6
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+maxzoom: 13
 minzoom: 0
 name: walls-of-the-world

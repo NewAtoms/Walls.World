@@ -5,14 +5,56 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[© New Atoms, 2015]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">25.8398,36.0313,4</Parameter>
+  <Parameter name="center">-116.9543,32.5468,11</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">1</Parameter>
   <Parameter name="name"><![CDATA[Walls of the World]]></Parameter>
-  <Parameter name="source"><![CDATA[mapbox:///mapbox.satellite,mapbox.mapbox-streets-v5,bvhme.6341c6fc]]></Parameter>
+  <Parameter name="source"><![CDATA[mapbox:///bvhme.6341c6fc,mapbox.satellite,mapbox.mapbox-streets-v5]]></Parameter>
 </Parameters>
 
+
+<Style name="Walls_with_one_line" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <LineSymbolizer stroke-width="10" stroke-opacity="0.7" stroke="#ff0000" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <LineSymbolizer stroke="#ff0000" stroke-linejoin="round" stroke-linecap="round" stroke-width="5" stroke-opacity="1" />
+  </Rule>
+</Style>
+<Layer name="Walls_with_one_line"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>Walls_with_one_line</StyleName>  </Layer>
+
+<Style name="Walls_with_multiple_lines" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <LineSymbolizer stroke-width="10" stroke-opacity="0.7" stroke="#ff0000" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <LineSymbolizer stroke="#ff0000" stroke-linejoin="round" stroke-linecap="round" stroke-width="5" stroke-opacity="1" />
+  </Rule>
+</Style>
+<Layer name="Walls_with_multiple_lines"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>Walls_with_multiple_lines</StyleName>  </Layer>
+
+<Style name="US_Border_fence" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <LineSymbolizer stroke-width="10" stroke-opacity="0.7" stroke="#ff0000" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <LineSymbolizer stroke="#ff0000" stroke-linejoin="round" stroke-linecap="round" stroke-width="5" stroke-opacity="1" />
+  </Rule>
+</Style>
+<Layer name="US_Border_fence"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>US_Border_fence</StyleName>  </Layer>
 
 <Style name="mapbox_satellite_full" filter-mode="first">
   <Rule>
@@ -1385,47 +1427,5 @@
 <Layer name="housenum_label"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
-
-<Style name="Walls_with_one_line" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <LineSymbolizer stroke-width="10" stroke-opacity="0.5" stroke="rgba(255, 0, 0, 0.75)" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <LineSymbolizer stroke="rgba(255, 0, 0, 0.75)" stroke-linejoin="round" stroke-linecap="round" stroke-width="5" stroke-opacity="0.75" />
-  </Rule>
-</Style>
-<Layer name="Walls_with_one_line"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>Walls_with_one_line</StyleName>  </Layer>
-
-<Style name="Walls_with_multiple_lines" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <LineSymbolizer stroke-width="10" stroke-opacity="0.5" stroke="rgba(255, 0, 0, 0.75)" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <LineSymbolizer stroke="rgba(255, 0, 0, 0.75)" stroke-linejoin="round" stroke-linecap="round" stroke-width="5" stroke-opacity="0.75" />
-  </Rule>
-</Style>
-<Layer name="Walls_with_multiple_lines"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>Walls_with_multiple_lines</StyleName>  </Layer>
-
-<Style name="United_States_Mexico_Barrier" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <LineSymbolizer stroke-width="10" stroke-opacity="0.5" stroke="rgba(255, 0, 0, 0.75)" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <LineSymbolizer stroke="rgba(255, 0, 0, 0.75)" stroke-linejoin="round" stroke-linecap="round" stroke-width="5" stroke-opacity="0.75" />
-  </Rule>
-</Style>
-<Layer name="United_States_Mexico_Barrier"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>United_States_Mexico_Barrier</StyleName>  </Layer>
 
 </Map>

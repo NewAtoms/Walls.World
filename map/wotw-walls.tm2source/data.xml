@@ -4,10 +4,11 @@
 
 <Parameters>
   <Parameter name="attribution"><![CDATA[New Atoms]]></Parameter>
-  <Parameter name="center">43.5938,0.7031,1</Parameter>
+  <Parameter name="center">-107.2488,29.2864,3</Parameter>
+  <Parameter name="description"><![CDATA[With US Border fence]]></Parameter>
   <Parameter name="format">pbf</Parameter>
-  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"Walls_with_one_line","description":"","fields":{"Name":"String","Description":"String"}},{"id":"Walls_with_multiple_lines","description":"","fields":{"Name":"String","Description":"String"}},{"id":"United_States_Mexico_Barrier","description":"","fields":{"Name":"String","Description":"String"}}]}]]></Parameter>
-  <Parameter name="maxzoom">6</Parameter>
+  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"Walls_with_one_line","description":"","fields":{"Name":"String","Description":"String"}},{"id":"Walls_with_multiple_lines","description":"","fields":{"Name":"String","Description":"String"}},{"id":"US_Border_fence","description":"US Border Fence","fields":{"timestamp":"String","version":"String","changeset":"String","user":"String","uid":"String","barrier":"String","border_fence":"String","id":"String","border_fence_owner":"String","border_fence_type":"String","border_fence_type_detailed":"String","loc_name":"String","loc_name:de":"String","two_sided":"String","access":"String","emergency":"String","foot":"String","source":"String","supervised":"String","addr:city":"String","addr:country":"String","addr:housenumber":"String","addr:postcode":"String","addr:street":"String","is_in:city":"String","is_in:country":"String","is_in:country_code":"String","is_in:state":"String","is_in:state_code":"String"}}]}]]></Parameter>
+  <Parameter name="maxzoom">13</Parameter>
   <Parameter name="minzoom">0</Parameter>
   <Parameter name="name"><![CDATA[walls-of-the-world]]></Parameter>
 </Parameters>
@@ -35,13 +36,13 @@
     </Datasource>
   </Layer>
 
-<Layer name="United_States_Mexico_Barrier"
+<Layer name="US_Border_fence"
   buffer-size="8"
-  srs="+init=epsg:4326">
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
     
     <Datasource>
-       <Parameter name="file"><![CDATA[/Users/bvhme/walls-of-the-world/map/Walls of the world.kml]]></Parameter>
-       <Parameter name="layer"><![CDATA[United States Mexico Barrier]]></Parameter>
+       <Parameter name="file"><![CDATA[/Users/bvhme/walls-of-the-world/map/US Border fence.geojson]]></Parameter>
+       <Parameter name="layer"><![CDATA[OGRGeoJSON]]></Parameter>
        <Parameter name="type"><![CDATA[ogr]]></Parameter>
     </Datasource>
   </Layer>
