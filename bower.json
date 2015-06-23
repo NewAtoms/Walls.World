@@ -16,6 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "mapbox.js": "~2.2.0"
+    "mapbox.js": "~2.2.0",
+    "polymer": "~1.0.4"
   }
 }
