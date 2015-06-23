@@ -5,14 +5,56 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[© New Atoms, 2015]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">126.6833,41.6483,7</Parameter>
+  <Parameter name="center">-116.9543,32.5468,11</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">1</Parameter>
   <Parameter name="name"><![CDATA[Walls of the World]]></Parameter>
-  <Parameter name="source"><![CDATA[mapbox:///mapbox.satellite,mapbox.mapbox-streets-v5,bvhme.6dbc32e1]]></Parameter>
+  <Parameter name="source"><![CDATA[mapbox:///bvhme.6341c6fc,mapbox.satellite,mapbox.mapbox-streets-v5]]></Parameter>
 </Parameters>
 
+
+<Style name="Walls_with_one_line" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <LineSymbolizer stroke-width="10" stroke-opacity="0.7" stroke="#ff0000" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <LineSymbolizer stroke="#ff0000" stroke-linejoin="round" stroke-linecap="round" stroke-width="5" stroke-opacity="1" />
+  </Rule>
+</Style>
+<Layer name="Walls_with_one_line"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>Walls_with_one_line</StyleName>  </Layer>
+
+<Style name="Walls_with_multiple_lines" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <LineSymbolizer stroke-width="10" stroke-opacity="0.7" stroke="#ff0000" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <LineSymbolizer stroke="#ff0000" stroke-linejoin="round" stroke-linecap="round" stroke-width="5" stroke-opacity="1" />
+  </Rule>
+</Style>
+<Layer name="Walls_with_multiple_lines"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>Walls_with_multiple_lines</StyleName>  </Layer>
+
+<Style name="US_Border_fence" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <LineSymbolizer stroke-width="10" stroke-opacity="0.7" stroke="#ff0000" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <LineSymbolizer stroke="#ff0000" stroke-linejoin="round" stroke-linecap="round" stroke-width="5" stroke-opacity="1" />
+  </Rule>
+</Style>
+<Layer name="US_Border_fence"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>US_Border_fence</StyleName>  </Layer>
 
 <Style name="mapbox_satellite_full" filter-mode="first">
   <Rule>
@@ -1385,145 +1427,5 @@
 <Layer name="housenum_label"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
-
-<Style name="Ceuta" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <LineSymbolizer stroke-width="10" stroke-opacity="0.5" stroke="rgba(255, 0, 0, 0.75)" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <LineSymbolizer stroke="rgba(255, 0, 0, 0.75)" stroke-linejoin="round" stroke-linecap="round" stroke-width="5" stroke-opacity="0.75" />
-  </Rule>
-</Style>
-<Layer name="Ceuta"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>Ceuta</StyleName>  </Layer>
-
-<Style name="China_North_Korea_Barrier" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <LineSymbolizer stroke-width="10" stroke-opacity="0.5" stroke="rgba(255, 0, 0, 0.75)" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <LineSymbolizer stroke="rgba(255, 0, 0, 0.75)" stroke-linejoin="round" stroke-linecap="round" stroke-width="5" stroke-opacity="0.75" />
-  </Rule>
-</Style>
-<Layer name="China_North_Korea_Barrier"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>China_North_Korea_Barrier</StyleName>  </Layer>
-
-<Style name="Baghdad_Wall" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <LineSymbolizer stroke-width="10" stroke-opacity="0.5" stroke="rgba(255, 0, 0, 0.75)" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <LineSymbolizer stroke="rgba(255, 0, 0, 0.75)" stroke-linejoin="round" stroke-linecap="round" stroke-width="5" stroke-opacity="0.75" />
-  </Rule>
-</Style>
-<Layer name="Baghdad_Wall"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>Baghdad_Wall</StyleName>  </Layer>
-
-<Style name="Gaza-Egypt_barrier" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <LineSymbolizer stroke-width="10" stroke-opacity="0.5" stroke="rgba(255, 0, 0, 0.75)" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <LineSymbolizer stroke="rgba(255, 0, 0, 0.75)" stroke-linejoin="round" stroke-linecap="round" stroke-width="5" stroke-opacity="0.75" />
-  </Rule>
-</Style>
-<Layer name="Gaza-Egypt_barrier"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>Gaza-Egypt_barrier</StyleName>  </Layer>
-
-<Style name="Malaysia_Thailand_barrier" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <LineSymbolizer stroke-width="10" stroke-opacity="0.5" stroke="rgba(255, 0, 0, 0.75)" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <LineSymbolizer stroke="rgba(255, 0, 0, 0.75)" stroke-linejoin="round" stroke-linecap="round" stroke-width="5" stroke-opacity="0.75" />
-  </Rule>
-</Style>
-<Layer name="Malaysia_Thailand_barrier"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>Malaysia_Thailand_barrier</StyleName>  </Layer>
-
-<Style name="Melilla_Border_Fence" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <LineSymbolizer stroke-width="10" stroke-opacity="0.5" stroke="rgba(255, 0, 0, 0.75)" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <LineSymbolizer stroke="rgba(255, 0, 0, 0.75)" stroke-linejoin="round" stroke-linecap="round" stroke-width="5" stroke-opacity="0.75" />
-  </Rule>
-</Style>
-<Layer name="Melilla_Border_Fence"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>Melilla_Border_Fence</StyleName>  </Layer>
-
-<Style name="Saudi_Arabia_-_Yemen_barrier" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <LineSymbolizer stroke-width="10" stroke-opacity="0.5" stroke="rgba(255, 0, 0, 0.75)" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <LineSymbolizer stroke="rgba(255, 0, 0, 0.75)" stroke-linejoin="round" stroke-linecap="round" stroke-width="5" stroke-opacity="0.75" />
-  </Rule>
-</Style>
-<Layer name="Saudi_Arabia_-_Yemen_barrier"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>Saudi_Arabia_-_Yemen_barrier</StyleName>  </Layer>
-
-<Style name="Western_Saharan_Berm" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <LineSymbolizer stroke-width="10" stroke-opacity="0.5" stroke="rgba(255, 0, 0, 0.75)" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <LineSymbolizer stroke="rgba(255, 0, 0, 0.75)" stroke-linejoin="round" stroke-linecap="round" stroke-width="5" stroke-opacity="0.75" />
-  </Rule>
-</Style>
-<Layer name="Western_Saharan_Berm"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>Western_Saharan_Berm</StyleName>  </Layer>
-
-<Style name="United_Nations_Buffer_Zone_In_Cyprus" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <LineSymbolizer stroke-width="10" stroke-opacity="0.5" stroke="rgba(255, 0, 0, 0.75)" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <LineSymbolizer stroke="rgba(255, 0, 0, 0.75)" stroke-linejoin="round" stroke-linecap="round" stroke-width="5" stroke-opacity="0.75" />
-  </Rule>
-</Style>
-<Layer name="United_Nations_Buffer_Zone_In_Cyprus"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>United_Nations_Buffer_Zone_In_Cyprus</StyleName>  </Layer>
-
-<Style name="Saudi_Arabia-Iraq_Barrier" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <LineSymbolizer stroke-width="10" stroke-opacity="0.5" stroke="rgba(255, 0, 0, 0.75)" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <LineSymbolizer stroke="rgba(255, 0, 0, 0.75)" stroke-linejoin="round" stroke-linecap="round" stroke-width="5" stroke-opacity="0.75" />
-  </Rule>
-</Style>
-<Layer name="Saudi_Arabia-Iraq_Barrier"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>Saudi_Arabia-Iraq_Barrier</StyleName>  </Layer>
 
 </Map>
