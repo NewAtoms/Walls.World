@@ -1,0 +1,18 @@
+{
+  "name": "walls-of-the-world",
+  "version": "0.0.0",
+  "homepage": "https://github.com/NewAtoms/walls-of-the-world",
+  "authors": [
+    "Boris van Hoytema <i@bvh.me>"
+  ],
+  "description": "A map of all the big walls in the world",
+  "main": "main.js",
+  "license": "None",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

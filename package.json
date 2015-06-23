@@ -1,0 +1,26 @@
+{
+  "name": "walls-of-the-world",
+  "version": "1.0.0",
+  "description": "A map of all the big maps in the world",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bvhme@github.com/NewAtoms/walls-of-the-world.git"
+  },
+  "keywords": [
+    "Walls",
+    "Journalism",
+    "Geopolitics",
+    "Maps"
+  ],
+  "author": "New Atoms",
+  "bugs": {
+    "url": "https://github.com/NewAtoms/walls-of-the-world/issues"
+  },
+  "dependencies": {
+    "express": "^4.13.0"
+  }
+}
