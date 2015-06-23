@@ -1,0 +1,79 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: bvhme.6341c6fc
+  rev: s-28241900
+  saveCenter: true
+attribution: New Atoms
+center: 
+  - -107.2488
+  - 29.2864
+  - 3
+description: With US Border fence
+Layer: 
+  - id: Walls_with_one_line
+    Datasource: 
+      file: /Users/bvhme/walls-of-the-world/map/Walls of the world.kml
+      layer: Walls with one line
+      type: ogr
+    description: ''
+    fields: 
+      Description: String
+      Name: String
+    properties: 
+      "buffer-size": 8
+    srs: "+init=epsg:4326"
+  - id: Walls_with_multiple_lines
+    Datasource: 
+      file: /Users/bvhme/walls-of-the-world/map/Walls of the world.kml
+      layer: Walls with multiple lines
+      type: ogr
+    description: ''
+    fields: 
+      Description: String
+      Name: String
+    properties: 
+      "buffer-size": 8
+    srs: "+init=epsg:4326"
+  - id: US_Border_fence
+    Datasource: 
+      file: /Users/bvhme/walls-of-the-world/map/US Border fence.geojson
+      layer: OGRGeoJSON
+      type: ogr
+    description: US Border Fence
+    fields: 
+      id: String
+      access: String
+      "addr:city": String
+      "addr:country": String
+      "addr:housenumber": String
+      "addr:postcode": String
+      "addr:street": String
+      barrier: String
+      border_fence: String
+      border_fence_owner: String
+      border_fence_type: String
+      border_fence_type_detailed: String
+      changeset: String
+      emergency: String
+      foot: String
+      "is_in:city": String
+      "is_in:country": String
+      "is_in:country_code": String
+      "is_in:state": String
+      "is_in:state_code": String
+      loc_name: String
+      "loc_name:de": String
+      source: String
+      supervised: String
+      timestamp: String
+      two_sided: String
+      uid: String
+      user: String
+      version: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+maxzoom: 13
+minzoom: 0
+name: walls-of-the-world
