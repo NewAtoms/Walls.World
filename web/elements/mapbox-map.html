@@ -1,0 +1,33 @@
+<link rel="import" href="/bower_components/polymer/polymer.html">
+
+<dom-module id="mapbox-map">
+  <link href='/bower_components/mapbox.js/mapbox.css' rel='stylesheet' />
+  <style>
+  :host {
+    display: block;
+    position: relative;
+    background: black;
+  }
+  div#map {
+    display: block;
+    position: absolute;
+    left: 0; top: 0; bottom: 0; right: 0;
+    }
+  </style>
+  <template>
+    <div id="map" style="position: absolute"></div>
+  </template>
+  <script src="/bower_components/mapbox.js/mapbox.js" charset="utf-8"></script>
+  <script>
+    Polymer({
+      is: "mapbox-map",
+      attached: function() {
+        console.log('map attached', this.$.map)
+        this.$.map.innerHtml = 'Loading'
+        L.mapbox.accessToken = 'pk.eyJ1IjoiYnZobWUiLCJhIjoiX1pyRUdmTSJ9.5qZAxfffH2a3RoMJBR0sKg';
+        this.map = L.mapbox.map(this.$.map, 'bvhme.mhc5cap0')
+      }
+    });
+
+  </script>
+</dom-module>

@@ -3,9 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <title>Walls of the World</title>
-  <script src="/bower_components/mapbox.js/mapbox.js" charset="utf-8"></script>
+  <script src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+
+  <link rel="import" href="/bower_components/polymer/polymer.html">
+
+  <link rel="import" href="/elements/app-router.html">
+  <link rel="import" href="/elements/mapbox-map.html">
+
 </head>
 <body>
+<style>
+  body {
+    margin:0;
+    padding:0;
+    font-family: 'Arial';
+    font-size: 16px;
+  }
+  header, main, footer {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  header {}
+  mapbox-map {
+    width: 100%;
+    height: 90vh;
+    transition: height 0.3s;
+  }
+  main {}
+  footer {}
+</style>
+</head>
+<body>
+<header>
+  <h1>Walls of the World</h1>
+</header>
+<mapbox-map></mapbox-map>
+<main>
+</main>
+<footer>
+  <p>© 2015</p>
+</footer>
+<script>
 
+</script>
 </body>
 </html>
