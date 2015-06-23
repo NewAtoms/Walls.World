@@ -1,0 +1,30 @@
+_prefs: 
+  mapid: bvhme.e4ebacc8
+  saveCenter: true
+_properties: {}
+attribution: © New Atoms, 2015
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - 126.6833
+  - 41.6483
+  - 7
+description: ''
+format: "png8:m=h"
+interactivity_layer: ''
+layers: null
+maxzoom: 22
+minzoom: 1
+name: Walls of the World
+source: "mapbox:///mapbox.satellite,mapbox.mapbox-streets-v5,bvhme.6dbc32e1"
+styles: 
+  - style.mss
+  - walls.mss
+  - all-available-styles-default.mss
+  - roads.mss
+  - labels.mss
+  - default.mss
+template: ''
