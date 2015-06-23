@@ -1,0 +1,52 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: bvhme.6341c6fc
+  rev: s-13ebfcf1
+  saveCenter: true
+attribution: New Atoms
+center: 
+  - 43.5938
+  - 0.7031
+  - 1
+description: ''
+Layer: 
+  - id: Walls_with_one_line
+    Datasource: 
+      file: /Users/bvhme/walls-of-the-world/map/Walls of the world.kml
+      layer: Walls with one line
+      type: ogr
+    description: ''
+    fields: 
+      Description: String
+      Name: String
+    properties: 
+      "buffer-size": 8
+    srs: "+init=epsg:4326"
+  - id: Walls_with_multiple_lines
+    Datasource: 
+      file: /Users/bvhme/walls-of-the-world/map/Walls of the world.kml
+      layer: Walls with multiple lines
+      type: ogr
+    description: ''
+    fields: 
+      Description: String
+      Name: String
+    properties: 
+      "buffer-size": 8
+    srs: "+init=epsg:4326"
+  - id: United_States_Mexico_Barrier
+    Datasource: 
+      file: /Users/bvhme/walls-of-the-world/map/Walls of the world.kml
+      layer: United States Mexico Barrier
+      type: ogr
+    description: ''
+    fields: 
+      Description: String
+      Name: String
+    properties: 
+      "buffer-size": 8
+    srs: "+init=epsg:4326"
+maxzoom: 6
+minzoom: 0
+name: walls-of-the-world
