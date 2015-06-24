@@ -20,6 +20,9 @@
   <style>
 
     main {}
+    main img {
+      max-width: 100%;
+    }
     footer {}
   </style>
 </head>
@@ -48,10 +51,6 @@
   </template>
 </body>
 <script>
-  window.onscroll = function(){
-   var pageYOffset = (this.pageYOffset || document.documentElement.scrollTop) - (document.documentElement.clientTop || 0);
-   document.getElementById('hero-display').style.height = pageYOffset > 10 ? "30vw":"calc(90vh - 6rem)" ;
-  };
   app = window.app
   app.pages = pages.results
   app.pageUrl = function (item) {
