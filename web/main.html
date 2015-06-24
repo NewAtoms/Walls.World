@@ -29,24 +29,27 @@
 <body>
   <template is="dom-bind" id="app">
     <header>
-      <h1>Walls of the World</h1>
+      <a is="navigate-to" href="/">{{item.title}}
+        <h1>Walls of the World</h1>
+      </a>
     </header>
     <mapbox-map fit-box-coordinates="{{createBox(page)}}" id="hero-display"></mapbox-map>
     <main>
       <wall-page contents="{{page}}"></wall-page>
     </main>
-    <nav>
-      <ul>
-        <template is="dom-repeat" items="{{pages}}">
-          <li>
-            <a is="navigate-to" href="{{pageUrl(item)}}">{{item.title}}</a>
-          </li>
-        </template>
-      </ul>
-    </nav>
-
     <footer>
       <p>© 2015</p>
+
+      <nav>
+        <h2>Every page</h2>
+        <ul>
+          <template is="dom-repeat" items="{{pages}}">
+            <li>
+              <a is="navigate-to" href="{{pageUrl(item)}}">{{item.title}}</a>
+            </li>
+          </template>
+        </ul>
+      </nav>
     </footer>
   </template>
 </body>
