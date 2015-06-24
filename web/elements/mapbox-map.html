@@ -1,4 +1,5 @@
 <link rel="import" href="/bower_components/polymer/polymer.html">
+<link rel="import" href="/elements/app-theme.html">
 
 <dom-module id="mapbox-map">
   <link href='/bower_components/mapbox.js/mapbox.css' rel='stylesheet' />
@@ -21,11 +22,69 @@
   <script>
     Polymer({
       is: "mapbox-map",
+      properties: {
+        fitBoxCoordinates: {
+          type: Object,
+          observer: 'fitBoxCoordinatesInMap'
+        }
+      },
       attached: function() {
-        console.log('map attached', this.$.map)
-        this.$.map.innerHtml = 'Loading'
         L.mapbox.accessToken = 'pk.eyJ1IjoiYnZobWUiLCJhIjoiX1pyRUdmTSJ9.5qZAxfffH2a3RoMJBR0sKg';
         this.map = L.mapbox.map(this.$.map, 'bvhme.mhc5cap0')
+        this.fitBoxCoordinatesInMap()
+      },
+      fitBoxCoordinatesInMap: function() {
+        console.log(this.fitBoxCoordinates)
+        if (!this.fitBoxCoordinates || !this.fitBoxCoordinates.west) return false
+        var geojson = [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [this.fitBoxCoordinates.west,this.fitBoxCoordinates.north]
+            },
+            "properties": {
+              "title": "NW",
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [this.fitBoxCoordinates.east,this.fitBoxCoordinates.north]
+            },
+            "properties": {
+              "title": "NE",
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [this.fitBoxCoordinates.west,this.fitBoxCoordinates.south]
+            },
+            "properties": {
+              "title": "SW",
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [this.fitBoxCoordinates.east,this.fitBoxCoordinates.south]
+            },
+            "properties": {
+              "title": "SE",
+            }
+          }
+        ]
+
+        this.map.featureLayer.setGeoJSON(geojson)
+
+        this.map.fitBounds(this.map.featureLayer.getBounds())
+
+        this.map.featureLayer.setGeoJSON({features:[]})
+
       }
     });
 
