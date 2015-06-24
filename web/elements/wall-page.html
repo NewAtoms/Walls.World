@@ -1,0 +1,29 @@
+<link rel="import" href="/bower_components/polymer/polymer.html">
+<link rel="import" href="/elements/app-theme.html">
+
+<dom-module id="wall-page">
+  <style>
+
+  </style>
+  <template>
+    <article id="contents" inner-h-t-m-l="{{contents.html}}"></article>
+  </template>
+  <script>
+    Polymer({
+      is: "wall-page",
+      properties: {
+        current: String
+      },
+      pageHtml: function (pageName) {
+        var self = this
+        var result = ''
+        pages.results.map(function(item) {
+          if (item.name === pageName)
+            result = item.html
+        })
+        return result
+      }
+    });
+
+  </script>
+</dom-module>
