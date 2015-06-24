@@ -26,15 +26,37 @@
         fitBoxCoordinates: {
           type: Object,
           observer: 'fitBoxCoordinatesInMap'
-        }
+        },
+        geoJson: Object
       },
       attached: function() {
         L.mapbox.accessToken = 'pk.eyJ1IjoiYnZobWUiLCJhIjoiX1pyRUdmTSJ9.5qZAxfffH2a3RoMJBR0sKg';
         this.map = L.mapbox.map(this.$.map, 'bvhme.mhc5cap0')
+        this.addFeaturesFromGeoJson()
         this.fitBoxCoordinatesInMap()
       },
+      addFeaturesFromGeoJson: function() {
+        function whenClicked(e) {
+          page('/pages/' + e.target.feature.properties.name)
+        }
+        function onEachFeature(feature, layer) {
+            //bind click
+            layer.on({
+                click: whenClicked
+            })
+        }
+        var boxStyle = {
+          weight: 1,
+          opacity: 0.3,
+          color: 'black',
+          fillOpacity: 0,
+        }
+
+        L
+          .geoJson(this.geoJson, {style: boxStyle, onEachFeature: onEachFeature})
+          .addTo(this.map)
+      },
       fitBoxCoordinatesInMap: function() {
-        console.log(this.fitBoxCoordinates)
         if (!this.fitBoxCoordinates || !this.fitBoxCoordinates.west) return false
         var geojson = [
           {
@@ -78,13 +100,9 @@
             }
           }
         ]
-
         this.map.featureLayer.setGeoJSON(geojson)
-
         this.map.fitBounds(this.map.featureLayer.getBounds())
-
         this.map.featureLayer.setGeoJSON({features:[]})
-
       }
     });
 
