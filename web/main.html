@@ -33,7 +33,7 @@
         <h1>Walls of the World</h1>
       </a>
     </header>
-    <mapbox-map fit-box-coordinates="{{createBox(page)}}" id="hero-display"></mapbox-map>
+    <mapbox-map geo-json="{{geoJson}}" fit-box-coordinates="{{createBox(page)}}" id="hero-display"></mapbox-map>
     <main>
       <wall-page contents="{{page}}"></wall-page>
     </main>
@@ -56,6 +56,7 @@
 <script>
   app = window.app
   app.pages = pages.results
+  app.geoJson = pages.geoJson
   app.pageUrl = function (item) {
     return '/pages/' + item.name
   }
@@ -64,7 +65,6 @@
       console.log('No bounding box')
       return false
     }
-    console.log(page.metadata)
     var box = {
       north: page.metadata["North Latitude"],
       east: page.metadata["East Longitude"],
