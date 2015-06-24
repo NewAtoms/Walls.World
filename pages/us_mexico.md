@@ -1,2 +1,8 @@
 # United States - Mexico Barrier
-## _Type:_ Anti-illegal immigration and anti-drug smuggling
+* Type: Anti-illegal immigration and anti drugs smuggling
+* Built year: Under construction
+* Lenght: 3,360 km 
+
+![The wall ends in the pacific ocean](http://c2.staticflickr.com/8/7493/16010662536_68c22bb0c5_h.jpg)
+
+Photo: Tony Webster

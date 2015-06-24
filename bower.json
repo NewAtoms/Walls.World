@@ -18,6 +18,6 @@
   "dependencies": {
     "mapbox.js": "~2.2.0",
     "polymer": "~1.0.4",
-    "page": "~1.6.3"
+    "page": "visionmedia/page.js#~1.6.3"
   }
 }
