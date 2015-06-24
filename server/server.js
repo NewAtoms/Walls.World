@@ -4,12 +4,6 @@ var Routes = require('./routes')
 var Server = function () {
   var self = this
 
-  if (process.env.PORT) {
-    this.hostUrl = 'http://interface.newatoms.com'
-  } else {
-    this.hostUrl = 'http://localhost:8080'
-  }
-
   this.start = function () {
     // Import the Express server module and create an Express app
     var app = express()
