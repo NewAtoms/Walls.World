@@ -20,38 +20,40 @@
   <style>
 
     main {}
+    main img {
+      max-width: 100%;
+    }
     footer {}
   </style>
 </head>
 <body>
   <template is="dom-bind" id="app">
     <header>
-      <h1>Walls of the World</h1>
+      <a is="navigate-to" href="/">{{item.title}}
+        <h1>Walls of the World</h1>
+      </a>
     </header>
     <mapbox-map geo-json="{{geoJson}}" fit-box-coordinates="{{createBox(page)}}" id="hero-display"></mapbox-map>
     <main>
       <wall-page contents="{{page}}"></wall-page>
     </main>
-    <nav>
-      <ul>
-        <template is="dom-repeat" items="{{pages}}">
-          <li>
-            <a is="navigate-to" href="{{pageUrl(item)}}">{{item.title}}</a>
-          </li>
-        </template>
-      </ul>
-    </nav>
-
     <footer>
       <p>© 2015</p>
+
+      <nav>
+        <h2>Every page</h2>
+        <ul>
+          <template is="dom-repeat" items="{{pages}}">
+            <li>
+              <a is="navigate-to" href="{{pageUrl(item)}}">{{item.title}}</a>
+            </li>
+          </template>
+        </ul>
+      </nav>
     </footer>
   </template>
 </body>
 <script>
-  window.onscroll = function(){
-   var pageYOffset = (this.pageYOffset || document.documentElement.scrollTop) - (document.documentElement.clientTop || 0);
-   document.getElementById('hero-display').style.height = pageYOffset > 10 ? "30vw":"calc(90vh - 6rem)" ;
-  };
   app = window.app
   app.pages = pages.results
   app.geoJson = pages.geoJson
