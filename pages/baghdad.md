@@ -1,5 +1,5 @@
 # Baghdad Wall
-## Info 
+
 * Type: Civil pacification
 * Built year: 2007
 * Lenght: 5 km 
