@@ -1,4 +1,10 @@
 var express = require('express')
+var pagesObject = require('./pages-object')
+var pagesJSON = ''
+
+pagesObject(function (pagesObject) {
+  pagesJSON = JSON.stringify(pagesObject)
+})
 
 var Routes = function (app) {
   var self = this
@@ -7,8 +13,14 @@ var Routes = function (app) {
   app.use('/bower_components', express.static('./bower_components'))
   app.use('/elements', express.static('./web/elements'))
 
-  app.get('/pages', function (request, response) {
+  app.get('/pages.json', function (request, response) {
+    response.set('Content-Type', 'application/json')
     response.send(pagesJSON)
+  })
+
+  app.get('/pages.js', function (request, response) {
+    response.set('Content-Type', 'application/javascript')
+    response.send(';pages = ' + pagesJSON + '')
   })
 
   app.get('/robots.txt', function (request, response) {
