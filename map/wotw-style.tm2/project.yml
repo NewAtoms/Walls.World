@@ -9,9 +9,9 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -116.9543
-  - 32.5468
-  - 11
+  - -2.9536
+  - 35.2944
+  - 15
 description: ''
 format: "png8:m=h"
 interactivity_layer: ''
@@ -19,7 +19,7 @@ layers: null
 maxzoom: 22
 minzoom: 1
 name: Walls of the World
-source: "mapbox:///bvhme.6341c6fc,mapbox.satellite,mapbox.mapbox-streets-v5"
+source: "mapbox:///mapbox.satellite,mapbox.mapbox-streets-v5,bvhme.6341c6fc"
 styles: 
   - style.mss
   - walls.mss

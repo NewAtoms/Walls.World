@@ -4,15 +4,21 @@
   line-color: @wall-color;
   line-join: round;
   line-cap: round;
-  line-width: 5;
-  line-opacity: 1;
-  [zoom>=13] {
-    line-width: 15;
-    line-opacity: 0.8;
-  }
+  line-width: 10;
+  line-opacity: 0.5;
   [zoom>=10] {
-    line-width: 10;
-    line-opacity: 0.7;
+    line-width: 7.5;
+    // opacity: 0.7;
   }
+  [zoom>=13] {
+    line-width: 5;
+    // opacity: 0.3;
+  }
+  [zoom>=20] {
+    line-width: 30;
+    line-opacity: 0.10;
+  }
+  
+  
     
 }

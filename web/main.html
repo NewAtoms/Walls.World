@@ -4,48 +4,72 @@
   <meta charset="UTF-8">
   <title>Walls of the World</title>
   <script src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <script src="/pages.js"></script>
 
   <link rel="import" href="/bower_components/polymer/polymer.html">
 
+  <link rel="import" href="/elements/app-theme.html">
+
   <link rel="import" href="/elements/app-router.html">
   <link rel="import" href="/elements/mapbox-map.html">
+  <link rel="import" href="/elements/wall-page.html">
+  <link rel="import" href="/elements/navigate-to.html">
 
 </head>
 <body>
-<style>
-  body {
-    margin:0;
-    padding:0;
-    font-family: 'Arial';
-    font-size: 16px;
-  }
-  header, main, footer {
-    max-width: 60rem;
-    margin: 0 auto;
-    padding: 1rem;
-  }
-  header {}
-  mapbox-map {
-    width: 100%;
-    height: 90vh;
-    transition: height 0.3s;
-  }
-  main {}
-  footer {}
-</style>
+  <style>
+
+    main {}
+    footer {}
+  </style>
 </head>
 <body>
-<header>
-  <h1>Walls of the World</h1>
-</header>
-<mapbox-map></mapbox-map>
-<main>
-</main>
-<footer>
-  <p>© 2015</p>
-</footer>
-<script>
+  <template is="dom-bind" id="app">
+    <header>
+      <h1>Walls of the World</h1>
+    </header>
+    <mapbox-map fit-box-coordinates="{{createBox(page)}}" id="hero-display"></mapbox-map>
+    <main>
+      <wall-page contents="{{page}}"></wall-page>
+    </main>
+    <nav>
+      <ul>
+        <template is="dom-repeat" items="{{pages}}">
+          <li>
+            <a is="navigate-to" href="{{pageUrl(item)}}">{{item.title}}</a>
+          </li>
+        </template>
+      </ul>
+    </nav>
 
-</script>
+    <footer>
+      <p>© 2015</p>
+    </footer>
+  </template>
 </body>
+<script>
+  window.onscroll = function(){
+   var pageYOffset = (this.pageYOffset || document.documentElement.scrollTop) - (document.documentElement.clientTop || 0);
+   document.getElementById('hero-display').style.height = pageYOffset > 10 ? "30vw":"calc(90vh - 6rem)" ;
+  };
+  app = window.app
+  app.pages = pages.results
+  app.pageUrl = function (item) {
+    return '/pages/' + item.name
+  }
+  app.createBox = function (page) {
+    if(!page.metadata["North Latitude"]) {
+      console.log('No bounding box')
+      return false
+    }
+    console.log(page.metadata)
+    var box = {
+      north: page.metadata["North Latitude"],
+      east: page.metadata["East Longitude"],
+      west: page.metadata["West Longitude"],
+      south: page.metadata["South Latitude"]
+    }
+    return box
+  }
+</script>
 </html>
