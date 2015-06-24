@@ -4,7 +4,8 @@
   "description": "A map of all the big maps in the world",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "bash ./post-install.command"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
     "url": "https://github.com/NewAtoms/walls-of-the-world/issues"
   },
   "dependencies": {
+    "bower": "^1.4.1",
     "express": "^4.13.0"
   }
 }
