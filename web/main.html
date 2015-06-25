@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>Walls of the World</title>
   <script src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <script src="/pages.js"></script>
 
   <link rel="import" href="/bower_components/polymer/polymer.html">
@@ -17,16 +19,6 @@
 
 </head>
 <body>
-  <style>
-
-    main {}
-    main img {
-      max-width: 100%;
-    }
-    footer {}
-  </style>
-</head>
-<body>
   <template is="dom-bind" id="app">
     <header>
       <a is="navigate-to" href="/">{{item.title}}
@@ -38,18 +30,21 @@
       <wall-page contents="{{page}}"></wall-page>
     </main>
     <footer>
-      <p>© 2015</p>
-
-      <nav>
-        <h2>Every page</h2>
-        <ul>
-          <template is="dom-repeat" items="{{pages}}">
-            <li>
-              <a is="navigate-to" href="{{pageUrl(item)}}">{{item.title}}</a>
-            </li>
-          </template>
-        </ul>
-      </nav>
+      <div>
+        <p>© 2015 &mdash; New Atoms</p>
+      </div>
+      <div>
+        <nav>
+          <h2>Every page</h2>
+          <ul>
+            <template is="dom-repeat" items="{{pages}}">
+              <li>
+                <a is="navigate-to" href="{{pageUrl(item)}}">{{item.title}}</a>
+              </li>
+            </template>
+          </ul>
+        </nav>
+      </div>
     </footer>
   </template>
 </body>
