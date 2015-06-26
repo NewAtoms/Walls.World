@@ -5,7 +5,7 @@ East Longitude: 48.5
 South Latitude: 28.7
 -->
 
-# [Kuwait-Iraq Barrier](https://en.wikipedia.org/wiki/Kuwait%E2%80%93Iraq_barrier)
+# [Kuwait - Iraq Barrier](https://en.wikipedia.org/wiki/Kuwait%E2%80%93Iraq_barrier)
 
 * Type: Conflict zone
 * Built year: 1991
