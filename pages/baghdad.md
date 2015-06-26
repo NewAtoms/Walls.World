@@ -13,7 +13,7 @@ South Latitude: 33.3590
 
 This barrier made by American armed forces separated sunnit and shiite civilians. The barrier circles around the predominantly sunnit district Ahamiya. Goal of the concrete wall was to decrease violence between the sunnis en shiites.
 
-## Read more on:
+## Read more:
 
 [Security fences or barriers to peace?] (http://www.theguardian.com/world/2007/apr/24/iraq.julianborger) (The Guardian)
 
