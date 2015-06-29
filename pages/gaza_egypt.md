@@ -5,7 +5,7 @@ East Longitude: 34.5
 South Latitude: 31
 -->
 
-# [Egypt - Gaza Barrier] (https://en.wikipedia.org/wiki/Egypt%E2%80%93Gaza_barrier)
+# [Egypt - Gaza Barrier](https://en.wikipedia.org/wiki/Egypt%E2%80%93Gaza_barrier)
 
 * Type: Anti-illigal immigration
 * Built year: 1979
@@ -17,7 +17,7 @@ In December 2009, Egypt started with help from the US, the building of a steel w
 
 ## Read more:
 
-[Egypt-Gaza tunnels: the lifeline under threat] (https://www.middleeastmonitor.com/articles/middle-east/8169-egypt-gaza-tunnels-the-lifeline-under-threat) (Middle East Monitor)
+[Egypt-Gaza tunnels: the lifeline under threat](https://www.middleeastmonitor.com/articles/middle-east/8169-egypt-gaza-tunnels-the-lifeline-under-threat) (Middle East Monitor)
 
 ![Soldier inspects one of many tunnels which go underneath the barrier](http://c1.staticflickr.com/5/4013/4359968011_2dc334aef8_z.jpg)
 

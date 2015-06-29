@@ -5,7 +5,7 @@ East Longitude: -97
 South Latitude: 25.5
 -->
 
-# [United States - Mexico Barrier] (https://en.wikipedia.org/wiki/Mexico%E2%80%93United_States_barrier)
+# [United States - Mexico Barrier](https://en.wikipedia.org/wiki/Mexico%E2%80%93United_States_barrier)
 
 * Type: Anti-illegal immigration and anti drugs smuggling
 * Built year: Under construction

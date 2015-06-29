@@ -5,7 +5,7 @@ East Longitude: 128.5
 South Latitude: 37.5
 -->
 
-# [Korean Wall] (https://en.wikipedia.org/wiki/Korean_Demilitarized_Zone)
+# [Korean Wall](https://en.wikipedia.org/wiki/Korean_Demilitarized_Zone)
 
 * Type: Conflict zone
 * Built year: 1953
@@ -15,7 +15,7 @@ The Korean Demilitarized Zone (DMZ; Hangul: 한반도 비무장지대; hanja: �
 
 ## Read more:
 
-[Walls Still Impede South Korea’s Reunification With North] (http://www.wsj.com/articles/walls-still-impede-south-koreas-reunification-with-north-1415276912) (The Wall Street Journal)
+[Walls Still Impede South Korea’s Reunification With North](http://www.wsj.com/articles/walls-still-impede-south-koreas-reunification-with-north-1415276912) (The Wall Street Journal)
 
 ![Korean soldiers at the border](http://c1.staticflickr.com/7/6012/5936363166_336c1bb0d2_b.jpg)
 
