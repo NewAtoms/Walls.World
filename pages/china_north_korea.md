@@ -13,7 +13,7 @@ South Latitude: 39.5
 
 The border is 1,420 kilometres (880 mi) long. From west to east, the Yalu River, Paektu Mountain, and the Tumen River divide the two countries.
 
-Dandong, in the Liaoning Province of China, is the largest city on the border. On the other side of the river is the city of Sinuiju in North Pyongan Province, North Korea. The two cities are situated on the Yalu river delta at the western end of the border, near the Yellow Sea. Their waterfronts face each other and are connected by the Sino-Korean Friendship Bridge. (Source: [Wikipedia] (https://en.wikipedia.org/wiki/China%E2%80%93North_Korea_border))
+Dandong, in the Liaoning Province of China, is the largest city on the border. On the other side of the river is the city of Sinuiju in North Pyongan Province, North Korea. The two cities are situated on the Yalu river delta at the western end of the border, near the Yellow Sea. Their waterfronts face each other and are connected by the Sino-Korean Friendship Bridge. - Source: [Wikipedia](https://en.wikipedia.org/wiki/China%E2%80%93North_Korea_border) - 
 
 ## Read more:
 
