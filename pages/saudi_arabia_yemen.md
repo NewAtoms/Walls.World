@@ -5,12 +5,12 @@ East Longitude: 52.5
 South Latitude: 16
 -->
 
-# [Saudi Arabia - Yemen Barrier](https://en.wikipedia.org/wiki/Saudi%E2%80%93Yemen_barrier)
+# Saudi Arabia - Yemen Barrier
 * Type: Anti terrorism
 * Built year: 2003
 * Lenght: 75 km
 
-The Saudi–Yemen barrier is a physical barrier constructed by Saudi Arabia along part of its 1,800-kilometer (1,100 mi) border with Yemen. It is a structure made of pipeline three metres (10 ft) high filled with concrete, acting as a "security barrier along sections of the now fully demarcated border with Yemen" and fitted with electronic detection equipment. (Source: [Wikipedia] (https://en.wikipedia.org/wiki/Saudi%E2%80%93Yemen_barrier))
+The Saudi–Yemen barrier is a physical barrier constructed by Saudi Arabia along part of its 1,800-kilometer (1,100 mi) border with Yemen. It is a structure made of pipeline three metres (10 ft) high filled with concrete, acting as a "security barrier along sections of the now fully demarcated border with Yemen" and fitted with electronic detection equipment. - Source: [Wikipedia](https://en.wikipedia.org/wiki/Saudi%E2%80%93Yemen_barrier) -
 
 ## Read more:
 [Saudi Arabia Constructing 600-Mile Wall To Keep Out ISIS](http://europe.newsweek.com/saudi-arabia-constructing-600-mile-long-wall-keep-isis-out-299664) (Europe Newsweek)
