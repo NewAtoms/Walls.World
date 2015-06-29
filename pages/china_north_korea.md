@@ -17,7 +17,7 @@ Dandong, in the Liaoning Province of China, is the largest city on the border. O
 
 ## Read more:
 
-[A trip to the North Korea-China border] (http://www.nknews.org/2015/05/a-trip-to-the-north-korea-china-border-in-photos/) (NK News)
+[A trip to the North Korea-China border](http://www.nknews.org/2015/05/a-trip-to-the-north-korea-china-border-in-photos/) (NK News)
 
 ![North Korean soldier at a border post](http://c2.staticflickr.com/6/5018/5490782435_c9e141c789_b.jpg)
 

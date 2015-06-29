@@ -5,7 +5,7 @@ East Longitude: -8.5
 South Latitude: 21
 -->
 
-# [Western Sahara Berm] (https://en.wikipedia.org/wiki/Moroccan_Wall)
+# [Western Sahara Berm](https://en.wikipedia.org/wiki/Moroccan_Wall)
 * Type: Conflict zone
 * Built year: 1987
 * Lenght: 2,700 km
@@ -16,7 +16,7 @@ According to maps from the United Nations Mission for the Referendum in Western 
 
 ## Read more:
 
-[Moroccan Wall: The Berm of Western Sahara] (http://basementgeographer.com/moroccan-wall-the-berm-of-western-sahara/) (The Basement Geographer)
+[Moroccan Wall: The Berm of Western Sahara](http://basementgeographer.com/moroccan-wall-the-berm-of-western-sahara/) (The Basement Geographer)
 
 ![Picture from above, hoovering over two border posts](http://c1.staticflickr.com/1/104/260511894_94352fe4a0_z.jpg?zz=1)
 

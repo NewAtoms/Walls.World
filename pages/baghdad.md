@@ -5,7 +5,7 @@ East Longitude: 44.3870
 South Latitude: 33.3590
 -->
 
-# [Baghdad Wall] (https://en.wikipedia.org/wiki/Baghdad_Wall)
+# [Baghdad Wall](https://en.wikipedia.org/wiki/Baghdad_Wall)
 
 * Type: Civil pacification
 * Built year: 2007
@@ -15,7 +15,7 @@ This barrier made by American armed forces separated sunnit and shiite civilians
 
 ## Read more:
 
-[Security fences or barriers to peace?] (http://www.theguardian.com/world/2007/apr/24/iraq.julianborger) (The Guardian)
+[Security fences or barriers to peace?](http://www.theguardian.com/world/2007/apr/24/iraq.julianborger) (The Guardian)
 
 ![Piece of Baghdad wall](http://c1.staticflickr.com/5/4032/4442751351_6dbdb550c6_b.jpg)
 
