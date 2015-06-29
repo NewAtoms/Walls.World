@@ -13,7 +13,7 @@ South Latitude: 35.75
 
 The Ceuta border fence is a border barrier between Morocco and Spain at Ceuta, a city in the North African coast. Constructed by Spain, its purpose is to stop illegal immigration and smuggling. Morocco objected to the construction of the barrier since it does not recognize Spanish sovereignty in Ceuta.
 
-The fence consists of parallel 6 metre (20-foot) fences topped with barbed wire, with regular watchposts and a road running between them to accommodate police patrols or ambulance service in case of need. - source: [Wikipedia](https://en.wikipedia.org/wiki/Ceuta_border_fence) -
+The fence consists of parallel 6 metre (20-foot) fences topped with barbed wire, with regular watchposts and a road running between them to accommodate police patrols or ambulance service in case of need. - Source: [Wikipedia](https://en.wikipedia.org/wiki/Ceuta_border_fence) -
 
 ## Read more:
 [The Fences where Spain and Africa meet](http://www.npr.org/sections/parallels/2015/04/16/393577925/the-fences-where-spain-and-africa-meet) (NPR)
