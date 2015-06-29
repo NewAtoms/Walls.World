@@ -11,7 +11,7 @@ South Latitude: 33.3590
 * Built year: 2007
 * Lenght: 5 km
 
-This barrier made by American armed forces separated sunnit and shiite civilians. The barrier circles around the predominantly sunnit district Ahamiya. Goal of the concrete wall was to decrease violence between the sunnis en shiites. - source: [wikipedia](https://en.wikipedia.org/wiki/Baghdad_Wall) -
+This barrier made by American armed forces separated sunnit and shiite civilians. The barrier circles around the predominantly sunnit district Ahamiya. Goal of the concrete wall was to decrease violence between the sunnis en shiites. - Source: [wikipedia](https://en.wikipedia.org/wiki/Baghdad_Wall) -
 
 ## Read more:
 
