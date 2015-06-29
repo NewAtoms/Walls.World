@@ -2,10 +2,19 @@
 <link rel="import" href="/elements/app-theme.html">
 
 <dom-module id="wall-page">
-  <style>
-
-  </style>
   <template>
+  <style>
+    article {
+      margin: 1rem;
+    }
+    article#contents img {
+      width: 100%;
+      margin: 0 -1rem;
+    }
+    img[alt] {
+        visibility: visible;
+    }
+  </style>
     <article id="contents" inner-h-t-m-l="{{contents.html}}"></article>
   </template>
   <script>
