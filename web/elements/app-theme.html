@@ -20,6 +20,7 @@
     color: var(--text-color);
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   }
 
   header {
@@ -91,6 +92,7 @@
     padding-left: 0;
   }
   footer nav li {
+    display: inline-block;
     list-style: none;
   }
   footer nav a {
@@ -101,11 +103,15 @@
   }
 
   @media (max-width: 600px) {
-
+    footer nav li {
+      display: block;
+    }
   }
 
   @media (min-width: 601px) {
-
+    footer nav li {
+      display: inline-block;
+    }
   }
 
 </style>

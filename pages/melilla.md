@@ -5,7 +5,7 @@ East Longitude: -2.75
 South Latitude: 35.1
 -->
 
-# [Melilla Border Fence] (https://en.wikipedia.org/wiki/Melilla_border_fence)
+# [Melilla Border Fence](https://en.wikipedia.org/wiki/Melilla_border_fence)
 
 * Type: Anti-illegal immigration
 * Built year: 1998

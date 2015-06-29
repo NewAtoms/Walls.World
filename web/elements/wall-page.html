@@ -4,8 +4,15 @@
 <dom-module id="wall-page">
   <template>
   <style>
+    article {
+      margin: 1rem;
+    }
     article#contents img {
-      max-width: 100%;
+      width: 100%;
+      margin: 0 -1rem;
+    }
+    img[alt] {
+        visibility: visible;
     }
   </style>
     <article id="contents" inner-h-t-m-l="{{contents.html}}"></article>
