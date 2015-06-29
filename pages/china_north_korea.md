@@ -9,7 +9,7 @@ South Latitude: 39.5
 
 * Type: Anti-illigal immigration
 * Built year: Under construction
-* Length: 1,416 km
+* Length: 1,420 km
 
 The border is 1,420 kilometres (880 mi) long. From west to east, the Yalu River, Paektu Mountain, and the Tumen River divide the two countries.
 
