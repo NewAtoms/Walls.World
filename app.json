@@ -1,0 +1,9 @@
+{
+  "name": "Walls of the World",
+  "description": "",
+  "scripts": {
+    "postdeploy": "post-install.command"
+  },
+  "env": {},
+  "addons": []
+}
