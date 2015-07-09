@@ -8,7 +8,7 @@
   <Parameter name="center">-2.9536,35.2944,15</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
-  <Parameter name="minzoom">1</Parameter>
+  <Parameter name="minzoom">3</Parameter>
   <Parameter name="name"><![CDATA[Walls of the World]]></Parameter>
   <Parameter name="source"><![CDATA[mapbox:///mapbox.satellite,mapbox.mapbox-streets-v5,bvhme.6341c6fc]]></Parameter>
 </Parameters>
@@ -61,7 +61,7 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <RasterSymbolizer opacity="0.9" />
+    <RasterSymbolizer opacity="1" />
   </Rule>
 </Style>
 <Layer name="mapbox_satellite_full"
@@ -123,7 +123,7 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <RasterSymbolizer opacity="0.9" />
+    <RasterSymbolizer opacity="1" />
   </Rule>
 </Style>
 <Layer name="mapbox_satellite_watermask"
