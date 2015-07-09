@@ -17,7 +17,7 @@ format: "png8:m=h"
 interactivity_layer: ''
 layers: null
 maxzoom: 22
-minzoom: 1
+minzoom: 3
 name: Walls of the World
 source: "mapbox:///mapbox.satellite,mapbox.mapbox-streets-v5,bvhme.6341c6fc"
 styles: 
